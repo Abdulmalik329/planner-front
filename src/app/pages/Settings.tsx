@@ -221,7 +221,7 @@ export function Settings() {
                 <div className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full shadow transition-transform ${theme === 'dark' ? 'translate-x-6' : ''}`} />
               </button>
             </div>
-            <div>
+            {/* <div>
               <p className="font-medium text-gray-900 dark:text-white mb-3">Asosiy rang</p>
               <div className="flex gap-3 flex-wrap">
                 {accentColors.map(color => (
@@ -230,7 +230,7 @@ export function Settings() {
                     style={{ backgroundColor: color.value }} />
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -247,7 +247,7 @@ export function Settings() {
               { label: 'Jami', value: totalTasks, color: 'bg-blue-100 dark:bg-blue-900/20 text-blue-600' },
               { label: 'Bajarilgan', value: completedTasks, color: 'bg-green-100 dark:bg-green-900/20 text-green-600' },
               { label: 'Faol', value: activeTasks, color: 'bg-yellow-100 dark:bg-yellow-900/20 text-yellow-600' },
-              { label: 'Arxiv', value: archivedTasks, color: 'bg-gray-100 dark:bg-gray-700 text-gray-600' },
+              // { label: 'Arxiv', value: archivedTasks, color: 'bg-gray-100 dark:bg-gray-700 text-gray-600' },
             ].map((stat, idx) => (
               <div key={idx} className={`rounded-lg p-3 text-center ${stat.color}`}>
                 <p className="text-2xl font-bold">{stat.value}</p>
@@ -260,7 +260,7 @@ export function Settings() {
               Kategoriyalar: <span className="font-medium text-gray-900 dark:text-white">{categories.length}</span>
             </p>
           </div>
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             <button onClick={exportJSON}
               className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 text-sm">
               <Download className="w-4 h-4" /> Export JSON
@@ -269,7 +269,7 @@ export function Settings() {
               className="flex-1 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 flex items-center justify-center gap-2 text-sm">
               <Download className="w-4 h-4" /> Export CSV
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* XAVFLI ZONA */}
@@ -278,7 +278,7 @@ export function Settings() {
             <div className="w-10 h-10 rounded-lg bg-red-100 dark:bg-red-900/40 flex items-center justify-center">
               <AlertTriangle className="w-5 h-5 text-red-600 dark:text-red-400" />
             </div>
-            <h2 className="text-xl font-semibold text-red-900 dark:text-red-300">Xavfli zona</h2>
+            <h2 className="text-xl font-semibold text-red-900 dark:text-red-300">Tizimdan ciqish</h2>
           </div>
           {!showLogoutConfirm ? (
             <button onClick={() => setShowLogoutConfirm(true)}
