@@ -30,10 +30,10 @@ export function Dashboard() {
       <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl md:text-4xl font-black text-gray-900 dark:text-white tracking-tight">
-            Salom, {user?.name || user?.email?.split('@')[0]}!
+            Salom, {user?.name || user?.email?.split('@')[0]}
           </h1>
           <p className="text-gray-500 dark:text-gray-400 font-medium mt-1">
-            Bugun {new Date().toLocaleDateString('uz-UZ', { day: 'numeric', month: 'long' })}. Rejalarni boshlaymizmi?
+            Bugungi rejalarni boshlaymizmi?
           </p>
         </div>
       </div>
